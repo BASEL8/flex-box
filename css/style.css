@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    background-color: black;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 3px 6px 8px gray;
+    border-radius: 10px;
+}
+
+section:nth-of-type(odd) {
+    background-color: RGB(153, 161, 170);
+}
+
+h1 {
+    text-align: center;
+    font-size: 55px;
+    color: red;
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #d9d9d9;
+    box-shadow: 0 6px 8px gray;
+    border-radius: 10px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    text-transform: uppercase;
+    background-color: RGB(179, 58, 99);
+    margin: 30px auto;
+    width: 60%;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+p {
+    text-align: center;
+    font-size: 25px;
+    color: black;
+    border: 1px solid gray;
+    width: 80%;
+    margin: 10px auto;
+    padding: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    background-color: RGB(153, 161, 170);
+}
+
+section:nth-of-type(odd) p {
+    background-color: black;
+    color: RGB(153, 161, 170);
+}
+
+p:nth-last-child(2) {
+    margin-bottom: 100px;
+}
+
+
+/*
+  **
+  *******************************************
+  **************** CONTAINER ****************
+  *******************************************
+  **
+  flex-dircection : row / row-reverse / colum / colum-reverse
+  **
+  **
+  flex-warp : wrap / nowrap / warp-reverse
+  ** 
+  **
+  justify-content : flex-start / flex-end / center / space- between / space-around / space-evenly
+  **
+  **
+  align-items : strech / flex-start / flex-end / center / base-line
+  **
+  **
+  align-content : stretch / flex-start / flex-end / center / space-between / space-around
+  **
+  */
+
+.container {
+    background-color: #fff;
+    margin: 0 20px 200px 20px;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    border-radius: 10px;
+}
+
+.container-1 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-end;
+    height: 1000px;
+}
+
+.container-2 {
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.container-3 {
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-end;
+    align-content: stretch;
+    height: 700px;
+    ;
+}
+
+.container-4 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    height: 1000px;
+}
+
+.container-5 {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.container-6 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    align-content: space-between;
+    height: 1000px;
+}
+
+.container-7 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: stretch;
+    align-content: space-around;
+    height: 1000px;
+}
+
+.container-8 {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.container-9 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 1500px;
+}
+
+.container-10 {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 1500px;
+}
+
+
+/* 
+**
+****************************************
+***************** items ****************
+****************************************
+**
+align-self : auto / stretch / flex-start / flex -end / center / baseline
+**
+**
+order : 0 / <integer>
+**
+**
+flex-grow : 0 / <integer>
+**
+**
+flex-shrink : 1 / <integer>
+**
+**
+flex-basis : auto / <lenght>
+**
+*/
+
+.item {
+    padding: 40px;
+    margin: 30px;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: RGB(66, 129, 173);
+}
+
+section:nth-of-type(odd) .item {
+    background-color: RGB(224, 38, 84);
+}
+
+.item-1 {}
+
+section .container .item-1-a {
+    background-color: blue;
+    height: 300px;
+}
+
+.item-2 {}
+
+section .container .item-2-a {
+    background-color: gold;
+    font-size: 40px;
+    font-weight: 900;
+    color: black;
+}
+
+section .container .item-2-b {
+    background-color: green;
+    font-size: 15px;
+    color: white;
+    height: 150px;
+}
+
+.item-3 {}
+
+.item-4 {
+    color: black;
+}
+
+section .container .item-4-c {
+    height: 350px;
+    background-color: red;
+}
+
+.item-5 {}
+
+.item-6 {
+    color: black;
+}
+
+section .container .item-6-d {
+    color: white;
+    background-color: blue;
+    height: 250px;
+}
+
+.item-7 {
+    color: white;
+}
+
+section .container .item-7-b {
+    background-color: yellow;
+    color: black;
+    height: 200px;
+}
+
+.item-8 {
+    color: white;
+}
+
+section .container .item-8-e {
+    height: 200px;
+    background-color: red;
+}
+
+.item-9 {
+    color: white;
+    width: 200px;
+}
+
+.item-10 {
+    color: black;
+    width: 200px;
+}
